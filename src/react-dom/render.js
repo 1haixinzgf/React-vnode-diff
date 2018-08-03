@@ -44,7 +44,7 @@ function _render (vnode) {
   const dom = document.createElement(vnode.tag); // 第一重递归
   if (vnode.attrs) {
     Object.keys(vnode.attrs).forEach(key => {
-      const value = vnode.attrendrrs[key];
+      const value = vnode.attrs[key];
       setAttribute(dom, key, value);
     })
   }
